@@ -1,107 +1,99 @@
-Aquí te dejo el contenido del `README.md` que puedes agregar a tu repositorio:
-
 # TaskGit
+```
 ████████╗ █████╗ ███████╗██╗  ██╗ ██████╗ ██╗████████╗
 ╚══██╔══╝██╔══██╗██╔════╝██║ ██╔╝██╔════╝ ██║╚══██╔══╝
    ██║   ███████║███████╗█████╔╝ ██║  ███╗██║   ██║   
    ██║   ██╔══██║╚════██║██╔═██╗ ██║   ██║██║   ██║   
    ██║   ██║  ██║███████║██║  ██╗╚██████╔╝██║   ██║   
    ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝   ╚═╝   
-   
-**TaskGit** es una herramienta de gestión de tareas sencilla, creada para ser utilizada desde la terminal, aprovechando las funciones de Git para llevar un registro de tus tareas y proyectos. Con TaskGit, puedes agregar, completar, eliminar y listar tareas, todo desde la comodidad de tu terminal.
+                                                      
+TaskGit - Herramienta de Gestión de Tareas en la Terminal
+```
+**TaskGit** es una herramienta de gestión de tareas simple y eficiente, diseñada para ser utilizada desde la terminal. Te permite agregar, listar, completar, eliminar y ver el estado de tus tareas, todo en la comodidad de tu terminal. ¡Nunca más perderás de vista tus pendientes!
 
-### 🚀 Características
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
 
-- **Inicialización de repositorio Git**: Inicializa tu repositorio y crea un archivo de tareas.
-- **Agregar tareas**: Añade tareas con descripciones personalizadas.
-- **Listar tareas**: Muestra todas las tareas pendientes.
-- **Completar tareas**: Marca las tareas como completadas.
-- **Eliminar tareas**: Elimina tareas del archivo de tareas.
-- **Historial de tareas**: Guarda un historial limpio de las tareas completadas y eliminadas.
-- **Automatización de commits**: Los cambios en las tareas se guardan automáticamente en tu repositorio con un mensaje de commit correspondiente.
+<img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="25"><b>Skills</b>
+<br>
 
-### 🔥 Instalación
+## Características
 
-TaskGit está disponible en **PyPI**, por lo que puedes instalarlo fácilmente utilizando `pip`:
+- **Agregar tareas**: Permite agregar nuevas tareas con facilidad.
+- **Listar tareas**: Muestra todas las tareas que has agregado.
+- **Marcar tareas como completadas**: Te permite marcar tareas como completadas.
+- **Eliminar tareas**: Elimina tareas que ya no necesitas.
+- **Historial de tareas**: Muestra un historial completo de tareas realizadas.
+- **Estado de las tareas**: Muestra el estado actual de tus tareas.
+
+## Instalación
+
+Puedes instalar **TaskGit** fácilmente utilizando pip. Solo necesitas ejecutar el siguiente comando en tu terminal:
 
 ```bash
 pip install taskgit
 ```
 
-Una vez instalado, ya puedes empezar a usar TaskGit desde la terminal con el siguiente comando:
+Una vez que lo hayas instalado, podrás utilizar **TaskGit** desde la terminal.
 
-```bash
-taskgit
-```
+#### Comandos
 
-### 📋 Comandos disponibles
-
-- **`taskgit init`**: Inicializa el repositorio Git y crea el archivo de tareas.
-- **`taskgit agregar <tarea>`**: Agrega una nueva tarea.
-- **`taskgit listar`**: Muestra todas las tareas.
+- **`taskgit init`**: Inicializa el repositorio y el archivo donde se guardarán las tareas.
+- **`taskgit agregar <tarea>`**: Agrega una nueva tarea a tu lista.
+- **`taskgit listar`**: Muestra todas las tareas que has agregado hasta el momento.
 - **`taskgit completar <id>`**: Marca la tarea con el ID proporcionado como completada.
-- **`taskgit eliminar <id>`**: Elimina la tarea con el ID proporcionado.
-- **`taskgit estado`**: Muestra el estado de las tareas: pendientes y completadas.
-- **`taskgit historial`**: Muestra el historial de tareas completadas y eliminadas.
-- **`taskgit --help`**: Muestra este mensaje de ayuda.
+- **`taskgit eliminar <id>`**: Elimina la tarea con el ID especificado.
+- **`taskgit estado`**: Muestra el estado de todas las tareas (completadas o pendientes).
+- **`taskgit historial`**: Muestra un historial de tareas completadas y eliminadas.
+- **`taskgit --help`**: Muestra la ayuda y todos los comandos disponibles.
 
-### 🧰 Requisitos
+### Ejemplo de uso
 
-- **Python** 3.x o superior
-- **Git** instalado en tu sistema
-
-### 📦 Ejemplo de uso
-
-1. **Inicializar el repositorio y archivo de tareas:**
-
+1. **Inicializar el repositorio**:
    ```bash
    taskgit init
    ```
 
-2. **Agregar tareas:**
-
+2. **Agregar tareas**:
    ```bash
-   taskgit agregar "Comprar café"
-   taskgit agregar "Terminar proyecto"
+   taskgit agregar "Estudiar Python"
+   taskgit agregar "Leer un libro"
    ```
 
-3. **Listar tareas:**
-
+3. **Listar tareas**:
    ```bash
    taskgit listar
    ```
 
-4. **Completar tareas:**
-
+4. **Marcar tareas como completadas**:
    ```bash
    taskgit completar 1
    ```
 
-5. **Eliminar tareas:**
-
+5. **Eliminar tareas**:
    ```bash
    taskgit eliminar 2
    ```
 
-6. **Ver el estado de las tareas:**
-
+6. **Ver el estado de las tareas**:
    ```bash
    taskgit estado
    ```
 
-7. **Ver el historial de tareas:**
-
+7. **Ver el historial de tareas**:
    ```bash
    taskgit historial
    ```
 
-### 🔗 Enlaces
+## Publicación en PyPI
 
-- [Repositorio en GitHub](https://github.com/JoXBar/taskgit)
-- [TaskGit en PyPI](https://pypi.org/project/taskgit/)
+Este proyecto está disponible en **PyPI**, por lo que puedes instalarlo fácilmente usando `pip`:
 
----
-
-¡Hecho con ❤️ por JoXBar!
-
+```bash
+pip install taskgit
 ```
+
+¡Eso es todo! Ahora puedes gestionar tus tareas directamente desde la terminal de forma simple y efectiva.
+
+## Contribuciones
+
+Si deseas contribuir al proyecto, ¡estás más que bienvenido! Haz un fork del repositorio, realiza tus mejoras y envía un pull request. Estaré encantado de revisar tu código.
